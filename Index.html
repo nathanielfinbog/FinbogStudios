@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Finbog Studios — independent Norwegian studio working with film, television, games and digital media."
+    >
+
+    <meta
+        name="keywords"
+        content="Finbog Studios, film, television, games, Professor Testosteron, Hello Hemnesberget, DJ Runketryne"
+    >
+
+    <meta name="theme-color" content="#000000">
+
+    <title>Finbog Studios — Film, Television & Games</title>
+
+    <link rel="stylesheet" href="Finbog.css">
+    <script src="Finbog.js" defer></script>
+</head>
+
+<body>
+
+    <!-- =========================
+         NAVIGATION
+    ========================= -->
+
+    <nav class="navbar" id="navbar">
+
+        <a
+            href="Index.html"
+            class="logo"
+            aria-label="Finbog Studios – hjem"
+        >
+            FINBOG<span>STUDIOS</span>
+        </a>
+
+        <div class="nav-links" id="navLinks">
+
+            <a href="#projects">
+                Prosjekter
+            </a>
+
+            <a href="gallery.html">
+                Galleri
+            </a>
+
+            <a href="about.html">
+                Om oss</a>
+
+            <a href="#contact">
+                Kontakt
+            </a>
+
+        </div>
+
+        <button
+            class="menu-button"
+            id="menuButton"
+            type="button"
+            aria-label="Åpne meny"
+            aria-expanded="false"
+            aria-controls="navLinks"
+        >
+            ☰
+        </button>
+
+    </nav>
+
+
+    <!-- =========================
+         HERO
+    ========================= -->
+
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <p class="eyebrow">
+                FINBOG STUDIOS
+            </p>
+
+            <h1>
+                STORIES.<br>
+                <span>WORLDS.</span><br>
+                EXPERIENCES.
+            </h1>
+
+            <p class="hero-description">
+                Et uavhengig kreativt studio som arbeider
+                med film, TV, spill og digitale opplevelser.
+            </p>
+
+            <a
+                href="#projects"
+                class="gold-button"
+            >
+                Utforsk prosjekter
+                <span aria-hidden="true">→</span>
+            </a>
+
+        </div>
+
+        <div
+            class="hero-gradient"
+            aria-hidden="true"
+        ></div>
+
+    </section>
+
+
+    <!-- =========================
+         FEATURED PROJECT
+    ========================= -->
+
+    <section
+        class="featured"
+        aria-labelledby="featured-title"
+    >
+
+        <div class="section-label">
+            UTVALGT PROSJEKT
+        </div>
+
+        <div class="featured-content">
+
+            <div class="featured-image">
+
+                <img
+                    src="Testosteron.jpg"
+                    alt="Professor Testosteron"
+                    loading="lazy"
+                >
+
+            </div>
+
+            <div class="featured-text">
+
+                <p class="project-type">
+                    UPCOMING GAME
+                </p>
+
+                <h2 id="featured-title">
+                    PROFESSOR<br>
+                    <span>TESTOSTERON</span>
+                </h2>
+
+                <p>
+                    Et nytt spill basert på TV-serien
+                    <em>Professor Testosteron</em>.
+                </p>
+
+                <p class="muted">
+                    Prosjektet er under utvikling.
+                </p>
+
+                <div class="development-status">
+                    UNDER DEVELOPMENT
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         PROJECTS
+    ========================= -->
+
+    <section
+        class="projects"
+        id="projects"
+        aria-labelledby="projects-title"
+    >
+
+        <div class="section-heading">
+
+            <p class="section-label">
+                FINBOG STUDIOS
+            </p>
+
+            <h2 id="projects-title">
+                PROSJEKTER
+            </h2>
+
+            <p>
+                Et utvalg av våre produksjoner og
+                pågående prosjekter.
+            </p>
+
+        </div>
+
+
+        <div class="project-grid">
+
+            <!-- PROFESSOR TESTOSTERON GAME -->
+
+            <article class="project-card featured-project non-clickable">
+
+                <div class="project-image">
+
+                    <img
+                        src="Testosteron.jpg"
+                        alt="Professor Testosteron — The Game"
+                        loading="lazy"
+                    >
+
+                    <div class="project-overlay development-overlay">
+                        <span>
+                            UNDER DEVELOPMENT
+                        </span>
+                    </div>
+
+                </div>
+
+                <div class="project-info">
+
+                    <p>
+                        UPCOMING GAME
+                    </p>
+
+                    <h3>
+                        Professor Testosteron — The Game
+                    </h3>
+
+                </div>
+
+            </article>
+
+
+            <!-- HELLO HEMNESBERGET -->
+
+            <a
+                href="https://www.skrekkelig.no/filmer/hello-hemnesberget"
+                class="project-card project-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Se Hello Hemnesberget på Skrekkelig"
+            >
+
+                <div class="project-image">
+
+                    <img
+                        src="Hello_Hemnesberget.png"
+                        alt="Hello Hemnesberget"
+                        loading="lazy"
+                    >
+
+                    <div class="project-overlay">
+
+                        <span>
+                            SE FILMEN →
+                        </span>
+
+                    </div>
+
+                </div>
+
+                <div class="project-info">
+
+                    <p>
+                        FILM
+                    </p>
+
+                    <h3>
+                        Hello Hemnesberget
+                    </h3>
+
+                </div>
+
+            </a>
+
+
+            <!-- PROFESSOR TESTOSTERON TV -->
+
+            <a
+                href="https://www.themoviedb.org/tv/325722-professor-testosteron"
+                class="project-card project-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Se Professor Testosteron på TMDB"
+            >
+
+                <div class="project-image portrait-project">
+
+                    <img
+                        src="Testosteron.jpg"
+                        alt="Professor Testosteron"
+                        loading="lazy"
+                    >
+
+                    <div class="project-overlay">
+
+                        <span>
+                            SE TV-SERIEN →
+                        </span>
+
+                    </div>
+
+                </div>
+
+                <div class="project-info">
+
+                    <p>
+                        TV / SERIES
+                    </p>
+
+                    <h3>
+                        Professor Testosteron
+                    </h3>
+
+                </div>
+
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         ABOUT
+    ========================= -->
+
+    <section
+        class="about"
+        id="about"
+        aria-labelledby="about-title"
+    >
+
+        <div
+            class="about-number"
+            aria-hidden="true"
+        >
+            01
+        </div>
+
+        <div class="about-content">
+
+            <p class="section-label">
+                OM FINBOG STUDIOS
+            </p>
+
+            <h2 id="about-title">
+                VI LAGER<br>
+                <span>NOE NYTT.</span>
+            </h2>
+
+            <p>
+                Finbog Studios er et uavhengig kreativt studio
+                med fokus på film, TV, spill og digitale
+                opplevelser.
+            </p>
+
+            <p>
+                Vi utvikler egne univers, historier og
+                produksjoner — fra de første idéene til
+                ferdige opplevelser.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         COLLABORATIONS
+    ========================= -->
+
+    <section
+        class="collaborations"
+        aria-labelledby="collaboration-title"
+    >
+
+        <p class="section-label">
+            SAMARBEID
+        </p>
+
+        <h2 id="collaboration-title">
+            MADE WITH<br>
+            <span>OTHERS.</span>
+        </h2>
+
+        <p>
+            Finbog Studios har også jobbet med ulike
+            artister og kreative prosjekter.
+        </p>
+
+        <a
+            href="https://open.spotify.com/artist/5PHwEgo7hjGe6jnS9RtDdA?si=LG2vJ-YIQ4e0M9JQcZKbQw"
+            class="collaboration-name"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="DJ Runketryne på Spotify"
+        >
+            DJ RUNKETRYNE
+        </a>
+
+    </section>
+
+
+    <!-- =========================
+         CONTACT
+    ========================= -->
+
+    <section
+        class="contact"
+        id="contact"
+        aria-labelledby="contact-title"
+    >
+
+        <p class="section-label">
+            KONTAKT
+        </p>
+
+        <h2 id="contact-title">
+            HAR DU EN<br>
+            <span>IDÉ?</span>
+        </h2>
+
+        <p>
+            Ta kontakt med Finbog Studios.
+        </p>
+
+        <a
+            href="mailto:nathaniel@finbogstudio.com"
+            class="gold-button"
+        >
+            Kontakt oss
+            <span aria-hidden="true">→</span>
+        </a>
+
+    </section>
+
+
+    <!-- =========================
+         FOOTER
+    ========================= -->
+
+    <footer>
+
+        <div class="footer-logo">
+            FINBOG<span>STUDIOS</span>
+        </div>
+
+        <p>
+            Film · Television · Games · Digital Media
+        </p>
+
+        <div class="footer-bottom">
+
+            <span>
+                © 2026 Finbog Studios
+            </span>
+
+            <span>
+                Norway
+            </span>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Galleri fra Finbog Studios."
+    >
+
+    <meta name="theme-color" content="#000000">
+
+    <title>Galleri — Finbog Studios</title>
+
+    <link rel="stylesheet" href="Finbog.css">
+    <link rel="stylesheet" href="gallery.css">
+
+    <script src="Finbog.js" defer></script>
+</head>
+
+<body>
+
+    <!-- =========================
+         NAVIGATION
+    ========================= -->
+
+    <nav class="navbar" id="navbar">
+
+        <a
+            href="Index.html"
+            class="logo"
+            aria-label="Finbog Studios – hjem"
+        >
+            FINBOG<span>STUDIOS</span>
+        </a>
+
+        <div class="nav-links" id="navLinks">
+
+            <a href="Index.html#projects">
+                Prosjekter
+            </a>
+
+            <a
+                href="gallery.html"
+                class="active"
+            >
+                Galleri
+            </a>
+
+            <a href="about.html">
+                Om oss
+            </a>
+
+            <a href="Index.html">
+                Kontakt
+            </a>
+
+        </div>
+
+        <button
+            class="menu-button"
+            id="menuButton"
+            type="button"
+            aria-label="Åpne meny"
+            aria-expanded="false"
+            aria-controls="navLinks"
+        >
+            ☰
+        </button>
+
+    </nav>
+
+
+    <!-- =========================
+         GALLERY HERO
+    ========================= -->
+
+    <main>
+
+        <section class="gallery-hero">
+
+            <div class="gallery-hero-content">
+
+                <p class="eyebrow">
+                    FINBOG STUDIOS
+                </p>
+
+                <h1>
+                    MOMENTS.<br>
+                    FROM OUR<br>
+                    WORLDS.
+                </h1>
+
+                <p class="gallery-intro">
+                    Et utvalg bilder, øyeblikk og materiale
+                    fra våre filmer, TV-produksjoner og
+                    spillprosjekter.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             GALLERY
+        ========================= -->
+
+        <section class="gallery-section">
+
+            <div class="gallery-container">
+
+                <div class="gallery-heading">
+
+                    <div>
+
+                        <p class="section-label">
+                            OUR WORK
+                        </p>
+
+                        <h2>
+                            GALLERI<span>.</span>
+                        </h2>
+
+                    </div>
+
+                    <p class="gallery-description">
+                        Se bilder fra produksjoner,
+                        karakterer, spillutvikling og
+                        behind-the-scenes.
+                    </p>
+
+                </div>
+
+
+                <!-- FILTER -->
+
+                <div class="gallery-filters">
+
+                    <button
+                        class="gallery-filter active"
+                        data-filter="all"
+                        type="button"
+                    >
+                        ALLE
+                    </button>
+
+                    <button
+                        class="gallery-filter"
+                        data-filter="film"
+                        type="button"
+                    >
+                        FILM
+                    </button>
+
+                    <button
+                        class="gallery-filter"
+                        data-filter="tv"
+                        type="button"
+                    >
+                        TV
+                    </button>
+
+                    <button
+                        class="gallery-filter"
+                        data-filter="game"
+                        type="button"
+                    >
+                        SPILL
+                    </button>
+
+                    <button
+                        class="gallery-filter"
+                        data-filter="behind"
+                        type="button"
+                    >
+                        BEHIND THE SCENES
+                    </button>
+
+                </div>
+
+
+                <!-- =========================
+                     GALLERY GRID
+                ========================= -->
+
+                <div
+                    class="gallery-grid"
+                    id="galleryGrid"
+                >
+
+
+                    <!-- HELLO HEMNESBERGET 01 -->
+
+                    <button
+                        class="gallery-item gallery-item-large"
+                        type="button"
+                        data-category="film"
+                        data-image="Birk-Linas.png"
+                        data-title="Hello Hemnesberget"
+                        data-category-label="FILM"
+                    >
+
+                        <img
+                            src="Birk-Linas.png"
+                            alt="Hello Hemnesberget"
+                            loading="lazy"
+                        >
+
+                        <div class="gallery-overlay">
+
+                            <div>
+
+                                <span>
+                                    FILM
+                                </span>
+
+                                <h3>
+                                    Hello Hemnesberget
+                                </h3>
+
+                            </div>
+
+                            <strong>
+                                ↗
+                            </strong>
+
+                        </div>
+
+                    </button>
+
+
+                    <!-- HELLO HEMNESBERGET 02 -->
+
+                    <button
+                        class="gallery-item"
+                        type="button"
+                        data-category="film"
+                        data-image="sykkel.png"
+                        data-title="Hello Hemnesberget"
+                        data-category-label="FILM"
+                    >
+
+                        <img
+                            src="sykkel.png"
+                            alt="Hello Hemnesberget"
+                            loading="lazy"
+                        >
+
+                        <div class="gallery-overlay">
+
+                            <div>
+
+                                <span>
+                                    FILM
+                                </span>
+
+                                <h3>
+                                    Hello Hemnesberget
+                                </h3>
+
+                            </div>
+
+                            <strong>
+                                ↗
+                            </strong>
+
+                        </div>
+
+                    </button>
+
+
+                    <!-- TESTOSTERON 01 -->
+
+                    <button
+                        class="gallery-item"
+                        type="button"
+                        data-category="tv"
+                        data-image="Slangestaven.png"
+                        data-title="Professor Testosteron"
+                        data-category-label="TV"
+                    >
+
+                        <img
+                            src="Slangestaven.png"
+                            alt="Professor Testosteron"
+                            loading="lazy"
+                        >
+
+                        <div class="gallery-overlay">
+
+                            <div>
+
+                                <span>
+                                    TV
+                                </span>
+
+                                <h3>
+                                    Professor Testosteron
+                                </h3>
+
+                            </div>
+
+                            <strong>
+                                ↗
+                            </strong>
+
+                        </div>
+
+                    </button>
+
+
+                    <!-- TESTOSTERON 02 -->
+
+                    <button
+                        class="gallery-item gallery-item-wide"
+                        type="button"
+                        data-category="tv"
+                        data-image="Skjermbilde 2026-09-08 230615.png"
+                        data-title="Professor Testosteron"
+                        data-category-label="TV"
+                    >
+
+                        <img
+                            src="Skjermbilde 2026-09-08 230615.png"
+                            alt="Professor Testosteron"
+                            loading="lazy"
+                        >
+
+                        <div class="gallery-overlay">
+
+                            <div>
+
+                                <span>
+                                    TV
+                                </span>
+
+                                <h3>
+                                    Professor Testosteron
+                                </h3>
+
+                            </div>
+
+                            <strong>
+                                ↗
+                            </strong>
+
+                        </div>
+
+                    </button>
+
+
+                    <!-- TESTOSTERON GAME 01 -->
+
+                    <button
+                        class="gallery-item gallery-item-tall"
+                        type="button"
+                        data-category="game"
+                        data-image="images/gallery/testosteron-game-01.jpg"
+                        data-title="Professor Testosteron — Game"
+                        data-category-label="SPILL"
+                    >
+
+                        <img
+                            src="images/gallery/testosteron-game-01.jpg"
+                            alt="Professor Testosteron game"
+                            loading="lazy"
+                        >
+
+                        <div class="gallery-overlay">
+
+                            <div>
+
+                                <span>
+                                    SPILL
+                                </span>
+
+                                <h3>
+                                    Professor Testosteron — Game
+                                </h3>
+
+                            </div>
+
+                            <strong>
+                                ↗
+                            </strong>
+
+                        </div>
+
+                    </button>
+
+
+                    <!-- TESTOSTERON GAME 02 -->
+
+                    <button
+                        class="gallery-item"
+                        type="button"
+                        data-category="game"
+                        data-image="images/gallery/testosteron-game-02.jpg"
+                        data-title="Professor Testosteron — Game"
+                        data-category-label="SPILL"
+                    >
+
+                        <img
+                            src="images/gallery/testosteron-game-02.jpg"
+                            alt="Professor Testosteron game"
+                            loading="lazy"
+                        >
+
+                        <div class="gallery-overlay">
+
+                            <div>
+
+                                <span>
+                                    SPILL
+                                </span>
+
+                                <h3>
+                                    Professor Testosteron — Game
+                                </h3>
+
+                            </div>
+
+                            <strong>
+                                ↗
+                            </strong>
+
+                        </div>
+
+                    </button>
+
+
+                    <!-- BEHIND THE SCENES 01 -->
+
+                    <button
+                        class="gallery-item"
+                        type="button"
+                        data-category="behind"
+                        data-image="images/gallery/behind-scenes-01.jpg"
+                        data-title="Behind the Scenes"
+                        data-category-label="BEHIND THE SCENES"
+                    >
+
+                        <img
+                            src="images/gallery/behind-scenes-01.jpg"
+                            alt="Behind the scenes"
+                            loading="lazy"
+                        >
+
+                        <div class="gallery-overlay">
+
+                            <div>
+
+                                <span>
+                                    BEHIND THE SCENES
+                                </span>
+
+                                <h3>
+                                    Behind the Scenes
+                                </h3>
+
+                            </div>
+
+                            <strong>
+                                ↗
+                            </strong>
+
+                        </div>
+
+                    </button>
+
+
+                    <!-- BEHIND THE SCENES 02 -->
+
+                    <button
+                        class="gallery-item gallery-item-wide"
+                        type="button"
+                        data-category="behind"
+                        data-image="images/gallery/behind-scenes-02.jpg"
+                        data-title="Behind the Scenes"
+                        data-category-label="BEHIND THE SCENES"
+                    >
+
+                        <img
+                            src="images/gallery/behind-scenes-02.jpg"
+                            alt="Behind the scenes"
+                            loading="lazy"
+                        >
+
+                        <div class="gallery-overlay">
+
+                            <div>
+
+                                <span>
+                                    BEHIND THE SCENES
+                                </span>
+
+                                <h3>
+                                    Behind the Scenes
+                                </h3>
+
+                            </div>
+
+                            <strong>
+                                ↗
+                            </strong>
+
+                        </div>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         LIGHTBOX
+    ========================= -->
+
+    <div
+        class="lightbox"
+        id="lightbox"
+        aria-hidden="true"
+    >
+
+        <button
+            class="lightbox-close"
+            id="lightboxClose"
+            type="button"
+            aria-label="Lukk"
+        >
+            ×
+        </button>
+
+        <button
+            class="lightbox-prev"
+            id="lightboxPrev"
+            type="button"
+            aria-label="Forrige bilde"
+        >
+            ‹
+        </button>
+
+        <div class="lightbox-content">
+
+            <img
+                id="lightboxImage"
+                src=""
+                alt=""
+            >
+
+            <div class="lightbox-caption">
+
+                <span id="lightboxCategory"></span>
+
+                <h3 id="lightboxTitle"></h3>
+
+            </div>
+
+        </div>
+
+        <button
+            class="lightbox-next"
+            id="lightboxNext"
+            type="button"
+            aria-label="Neste bilde"
+        >
+            ›
+        </button>
+
+    </div>
+
+
+    <!-- =========================
+         FOOTER
+    ========================= -->
+
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <div class="footer-logo">
+                FINBOG<span>STUDIOS</span>
+            </div>
+
+            <p>
+                © 2026 Finbog Studios. All rights reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>

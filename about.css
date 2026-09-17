@@ -1,0 +1,423 @@
+/* =========================================
+   ABOUT PAGE
+   FINBOG STUDIOS
+========================================= */
+
+
+/* =========================
+   ABOUT HERO
+========================= */
+
+.about-hero {
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 120px 8%;
+    overflow: hidden;
+
+    background:
+        radial-gradient(
+            circle at 70% 40%,
+            rgba(210, 174, 59, 0.12),
+            transparent 30%
+        ),
+        #000;
+}
+
+/* Stor sirkel i bakgrunnen,
+   samme stil som forsiden */
+
+.about-hero::before {
+    content: "";
+    position: absolute;
+
+    width: 600px;
+    height: 600px;
+
+    border: 1px solid rgba(210, 174, 59, 0.08);
+    border-radius: 50%;
+
+    right: -150px;
+    top: 20%;
+}
+
+.about-hero-content {
+    max-width: 800px;
+    position: relative;
+    z-index: 2;
+
+    animation: aboutHeroIn 1s ease forwards;
+}
+
+.about-hero .eyebrow {
+    margin-bottom: 25px;
+}
+
+.about-hero h1 {
+    font-size: clamp(55px, 9vw, 130px);
+    line-height: 0.9;
+    letter-spacing: -5px;
+    font-weight: 800;
+    margin: 0;
+}
+
+.about-hero h1 span {
+    color: var(--gold);
+}
+
+.about-hero-description {
+    color: var(--gray);
+    max-width: 500px;
+    font-size: 18px;
+    margin: 35px 0;
+}
+
+@keyframes aboutHeroIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* =========================
+   PERSON
+========================= */
+
+.person-section {
+    max-width: var(--max-width);
+    margin: auto;
+
+    padding: 150px 5%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+
+    align-items: center;
+}
+
+
+/* BILDE */
+
+.person-image {
+    width: 100%;
+    aspect-ratio: 4 / 5;
+
+    overflow: hidden;
+
+    background: var(--dark);
+
+    border: 1px solid rgba(210, 174, 59, 0.15);
+}
+
+.person-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition:
+        transform 0.7s ease,
+        filter 0.7s ease;
+}
+
+.person-image:hover img {
+    transform: scale(1.05);
+}
+
+
+/* INFO */
+
+.person-info {
+    max-width: 650px;
+}
+
+.person-info .section-label {
+    margin-bottom: 25px;
+}
+
+.person-info h2 {
+    font-size: clamp(50px, 7vw, 100px);
+    line-height: 0.9;
+    letter-spacing: -3px;
+
+    margin-bottom: 30px;
+}
+
+.person-info h3 {
+    color: var(--gold);
+
+    font-size: 18px;
+    font-weight: 700;
+
+    line-height: 1.4;
+
+    margin-bottom: 30px;
+}
+
+.person-info p {
+    color: #aaa;
+    font-size: 18px;
+
+    max-width: 650px;
+
+    margin-bottom: 20px;
+}
+
+
+/* =========================
+   PERSON TAGS
+========================= */
+
+.person-tags {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 10px;
+
+    margin-top: 35px;
+}
+
+.person-tags span {
+    display: inline-block;
+
+    padding: 8px 13px;
+
+    border: 1px solid rgba(210, 174, 59, 0.35);
+
+    color: var(--gold);
+
+    font-size: 10px;
+    font-weight: 800;
+
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+
+/* =========================
+   ABOUT FINBOG
+========================= */
+
+.about-company {
+    padding: 130px 5%;
+
+    background: var(--dark);
+
+    display: grid;
+    grid-template-columns: 150px 1fr;
+
+    gap: 80px;
+}
+
+.about-company-content {
+    max-width: 750px;
+}
+
+.about-company h2 {
+    font-size: clamp(50px, 7vw, 100px);
+    line-height: 0.9;
+
+    margin-bottom: 40px;
+}
+
+.about-company h2 span {
+    color: var(--gold);
+}
+
+.about-company p {
+    color: #aaa;
+
+    font-size: 18px;
+
+    max-width: 650px;
+
+    margin-bottom: 20px;
+}
+
+
+/* =========================
+   CREATIVE AREAS
+========================= */
+
+.areas-section {
+    max-width: var(--max-width);
+    margin: auto;
+
+    padding: 120px 5%;
+}
+
+.areas-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 35px;
+
+    margin-top: 60px;
+}
+
+.area-card {
+    position: relative;
+
+    padding: 45px;
+
+    min-height: 260px;
+
+    background: var(--dark);
+
+    border: 1px solid #1a1a1a;
+
+    transition:
+        transform 0.4s ease,
+        border-color 0.4s ease,
+        background 0.4s ease;
+}
+
+.area-card:hover {
+    transform: translateY(-8px);
+
+    border-color: rgba(210, 174, 59, 0.25);
+
+    background: #101010;
+}
+
+.area-number {
+    display: block;
+
+    color: var(--gold);
+
+    font-size: 10px;
+    font-weight: 800;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 30px;
+}
+
+.area-card h3 {
+    font-size: 26px;
+
+    margin-bottom: 15px;
+}
+
+.area-card p {
+    color: var(--gray);
+
+    font-size: 15px;
+
+    max-width: 450px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+/*
+   Footer-styling kommer fra Finbog.css.
+   Vi lar den være lik på alle sidene.
+*/
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 800px) {
+
+    .about-hero {
+        min-height: 100vh;
+
+        padding: 130px 7% 80px;
+    }
+
+    .about-hero h1 {
+        letter-spacing: -3px;
+    }
+
+    .about-hero-description {
+        font-size: 16px;
+    }
+
+
+    /* PERSON */
+
+    .person-section {
+        grid-template-columns: 1fr;
+
+        gap: 40px;
+
+        padding: 100px 7%;
+    }
+
+    .person-info h2 {
+        font-size: clamp(45px, 12vw, 70px);
+
+        letter-spacing: -3px;
+    }
+
+    .person-info p {
+        font-size: 16px;
+    }
+
+
+    /* COMPANY */
+
+    .about-company {
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+
+        padding: 100px 7%;
+    }
+
+    .about-company h2 {
+        font-size: clamp(45px, 12vw, 70px);
+    }
+
+
+    /* AREAS */
+
+    .areas-section {
+        padding: 100px 7%;
+    }
+
+    .areas-grid {
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+
+        margin-top: 40px;
+    }
+
+    .area-card {
+        min-height: auto;
+
+        padding: 35px;
+    }
+}
+
+
+/* =========================
+   REDUCED MOTION
+========================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .about-hero-content {
+        animation: none;
+    }
+
+    .person-image img,
+    .area-card {
+        transition: none;
+    }
+}
